@@ -1,0 +1,15 @@
+{
+  "name": "ideale-haushaltshilfe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website der Ideale Haushaltshilfe – Haushaltshilfe & Alltagsbegleitung, anerkannt nach § 45a SGB XI",
+  "scripts": {
+    "build": "node build.js && tailwindcss -i src/input.css -o dist/css/styles.css --minify",
+    "dev": "node build.js --watch"
+  },
+  "devDependencies": {
+    "@fontsource-variable/lora": "^5.1.1",
+    "@fontsource-variable/source-sans-3": "^5.1.1",
+    "tailwindcss": "^3.4.17"
+  }
+}
