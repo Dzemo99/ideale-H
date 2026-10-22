@@ -29,7 +29,7 @@ const SITE = {
   whatsappLink: 'https://wa.me/491782782978',
   email: 'info@ideale-haushaltshilfe.de',
   street: 'Göttinger Straße 61',
-  zip: '[PLZ]',
+  zip: '31134',
   city: 'Hildesheim',
   hours: 'Mo – Fr 8:00 – 17:00 Uhr',
   ik: '000000000',

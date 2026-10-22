@@ -27,7 +27,8 @@
     </a>
 
     <nav aria-label="Hauptnavigation" class="hidden lg:block">
-      <ul class="flex items-center gap-1 font-semibold">
+      <ul class="flex items-center gap-1 whitespace-nowrap font-semibold">
+        <li><a href="index.html" data-nav="index" class="rounded-lg px-3 py-2 hover:bg-brand-50 hover:text-brand-700">Home</a></li>
         <li><a href="leistungen.html" data-nav="leistungen" class="rounded-lg px-3 py-2 hover:bg-brand-50 hover:text-brand-700">Leistungen</a></li>
         <li><a href="kostenuebernahme.html" data-nav="kosten" class="rounded-lg px-3 py-2 hover:bg-brand-50 hover:text-brand-700">Kostenübernahme</a></li>
         <li><a href="uber-uns.html" data-nav="uber-uns" class="rounded-lg px-3 py-2 hover:bg-brand-50 hover:text-brand-700">Über uns</a></li>
@@ -37,13 +38,13 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <a href="tel:{{site.phoneLink}}" class="hidden items-center gap-2 font-bold text-navy-900 hover:text-brand-700 xl:flex">
+      <a href="tel:{{site.phoneLink}}" class="hidden items-center gap-2 whitespace-nowrap font-bold text-navy-900 hover:text-brand-700 2xl:flex">
         <span class="icon-badge h-10 w-10">
           <svg class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         </span>
         <span class="leading-tight"><span class="block text-xs font-semibold uppercase tracking-wider text-navy-700">Kostenlos beraten lassen</span>{{site.phone}}</span>
       </a>
-      <a href="kontakt.html" class="btn-primary hidden sm:inline-flex">Erstberatung anfragen</a>
+      <a href="kontakt.html" class="btn-primary hidden sm:inline-flex lg:hidden xl:inline-flex">Erstberatung anfragen</a>
 
       <button type="button" class="inline-flex h-12 w-12 items-center justify-center rounded-xl border-2 border-navy-100 text-navy-900 lg:hidden" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
         <span class="sr-only">Menü öffnen</span>
@@ -56,7 +57,7 @@
   <!-- Mobiles Menü -->
   <nav id="mobile-menu" aria-label="Mobile Navigation" class="hidden border-t border-navy-100 bg-white lg:hidden">
     <ul class="container-page flex flex-col py-3 text-lg font-semibold">
-      <li><a href="index.html" data-nav="index" class="block rounded-lg px-3 py-3 hover:bg-brand-50">Startseite</a></li>
+      <li><a href="index.html" data-nav="index" class="block rounded-lg px-3 py-3 hover:bg-brand-50">Home</a></li>
       <li><a href="leistungen.html" data-nav="leistungen" class="block rounded-lg px-3 py-3 hover:bg-brand-50">Leistungen</a></li>
       <li><a href="kostenuebernahme.html" data-nav="kosten" class="block rounded-lg px-3 py-3 hover:bg-brand-50">Kostenübernahme &amp; Pflegekasse</a></li>
       <li><a href="uber-uns.html" data-nav="uber-uns" class="block rounded-lg px-3 py-3 hover:bg-brand-50">Über uns &amp; Qualität</a></li>
