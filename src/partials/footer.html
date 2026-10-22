@@ -34,7 +34,10 @@
       <h2 class="font-sans text-sm font-bold uppercase tracking-[0.14em] text-white">Kontakt</h2>
       <address class="mt-4 space-y-3 not-italic">
         <p>{{site.name}}<br>{{site.street}}<br>{{site.zip}} {{site.city}}</p>
-        <p><a href="tel:{{site.phoneLink}}" class="text-lg font-bold text-white hover:underline">{{site.phone}}</a></p>
+        <p>
+          <a href="tel:{{site.phoneLink}}" class="text-lg font-bold text-white hover:underline">{{site.phone}}</a><br>
+          <span class="text-sm text-navy-200">Mobil:</span> <a href="tel:{{site.mobileLink}}" class="font-bold text-white hover:underline">{{site.mobile}}</a>
+        </p>
         <p><a href="mailto:{{site.email}}" class="hover:text-white hover:underline">{{site.email}}</a></p>
         <p class="text-sm text-navy-200">{{site.hours}}</p>
       </address>
