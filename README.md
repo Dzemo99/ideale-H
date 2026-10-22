@@ -37,6 +37,6 @@ npm run build    # Produktions-Build nach dist/
 - Stundensatz + Kündigungsfrist in der FAQ (`kostenuebernahme.html`)
 - Anerkennende Behörde / Aktenzeichen (`uber-uns.html`, `impressum.html`)
 - Impressum und Datenschutzerklärung rechtlich prüfen lassen
-- Fehlende Bilder: `images/waesche-textilpflege.jpg`, `images/einkaufen-begleitung.jpg` (Stellen im Code mit 📷 markiert)
+- Alle Leistungsbilder vorhanden
 
 Suche im Projekt nach `PLATZHALTER` bzw. `[` findet alle offenen Stellen.
