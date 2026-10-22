@@ -28,7 +28,7 @@ npm run build    # Produktions-Build nach dist/
 
 1. Ordner als GitHub-Repository hochladen (`dist/` und `node_modules/` werden per `.gitignore` ausgelassen).
 2. In Netlify: *Add new site → Import from GitHub* → Repository wählen. Build-Befehl und Ordner werden aus `netlify.toml` übernommen.
-3. Formulare (`rueckruf`, `erstberatung`) erscheinen automatisch unter *Netlify → Forms*. Dort E-Mail-Benachrichtigung einrichten.
+3. Beide Formulare (`rueckruf`, `erstberatung`) senden an Formspree (`https://formspree.io/f/xjybbgee`). Anfragen kommen per E-Mail an die bei Formspree hinterlegte Adresse; das Feld `formular` zeigt, welches Formular genutzt wurde.
 
 ## Vor dem Livegang ausfüllen ⚠️
 

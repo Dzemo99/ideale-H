@@ -20,9 +20,10 @@
   <div class="container-page grid gap-10 lg:grid-cols-12">
 
     <!-- ============ FORMULAR ============ -->
-    <form name="erstberatung" method="POST" action="danke.html" data-netlify="true" netlify-honeypot="bot-field" class="card lg:col-span-8" aria-labelledby="form-titel">
-      <input type="hidden" name="form-name" value="erstberatung">
-      <p class="hidden"><label>Nicht ausfüllen: <input name="bot-field"></label></p>
+    <form name="erstberatung" method="POST" action="https://formspree.io/f/xjybbgee" data-formspree class="card lg:col-span-8" aria-labelledby="form-titel">
+      <input type="hidden" name="_subject" value="Neue Erstberatungs-Anfrage über die Website">
+      <input type="hidden" name="formular" value="erstberatung">
+      <p class="hidden" aria-hidden="true"><label>Nicht ausfüllen: <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <h2 id="form-titel" class="text-2xl font-semibold">Ihre Terminanfrage</h2>
       <p class="mt-1 text-navy-700">Felder mit <span class="text-brand-700">*</span> sind Pflichtfelder.</p>
 

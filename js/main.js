@@ -24,6 +24,44 @@
     });
   }
 
+  // Anfrageformulare → Formspree, danach eigene Danke-Seite
+  // Ohne JavaScript funktioniert das Formular trotzdem (normaler POST an Formspree).
+  document.querySelectorAll('form[data-formspree]').forEach(function (form) {
+    var status = document.createElement('p');
+    status.setAttribute('role', 'status');
+    status.className = 'mt-4 hidden rounded-xl bg-red-50 p-4 font-semibold text-red-800';
+    form.appendChild(status);
+    var button = form.querySelector('button[type="submit"]');
+    var buttonText = button ? button.textContent : '';
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      status.classList.add('hidden');
+      if (button) {
+        button.disabled = true;
+        button.textContent = 'Wird gesendet …';
+      }
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { Accept: 'application/json' },
+      })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          window.location.href = 'danke.html';
+        })
+        .catch(function () {
+          status.textContent =
+            'Leider konnte Ihre Anfrage gerade nicht gesendet werden. Bitte versuchen Sie es erneut oder rufen Sie uns direkt an.';
+          status.classList.remove('hidden');
+          if (button) {
+            button.disabled = false;
+            button.textContent = buttonText;
+          }
+        });
+    });
+  });
+
   // Budget-Rechner (Kostenübernahme-Seite)
   // Werte gültig seit 01.01.2025 (Pflegeunterstützungs- und -entlastungsgesetz)
   var SACHLEISTUNG = { 2: 796, 3: 1497, 4: 1859, 5: 2299 };

@@ -272,9 +272,10 @@
       </ul>
     </div>
 
-    <form name="rueckruf" method="POST" action="danke.html" data-netlify="true" netlify-honeypot="bot-field" class="rounded-[2rem] bg-white p-6 text-navy-900 sm:p-10 lg:col-span-7">
-      <input type="hidden" name="form-name" value="rueckruf">
-      <p class="hidden"><label>Nicht ausfüllen: <input name="bot-field"></label></p>
+    <form name="rueckruf" method="POST" action="https://formspree.io/f/xjybbgee" data-formspree class="rounded-[2rem] bg-white p-6 text-navy-900 sm:p-10 lg:col-span-7">
+      <input type="hidden" name="_subject" value="Neue Rückruf-Anfrage über die Website">
+      <input type="hidden" name="formular" value="rueckruf">
+      <p class="hidden" aria-hidden="true"><label>Nicht ausfüllen: <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <div class="grid gap-5 sm:grid-cols-2">
         <div class="sm:col-span-2">
           <label for="rr-name" class="form-label">Ihr Name <span aria-hidden="true" class="text-brand-700">*</span></label>
