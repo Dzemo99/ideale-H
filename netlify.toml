@@ -131,6 +131,11 @@
   status = 301
 
 [[redirects]]
+  from = "/hildesheim"
+  to = "/hildesheim.html"
+  status = 301
+
+[[redirects]]
   from = "/kontakt"
   to = "/kontakt.html"
   status = 301
